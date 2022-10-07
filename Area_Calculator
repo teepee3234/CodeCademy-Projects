@@ -1,0 +1,30 @@
+"""
+This will allow you to calculate the area of a shape you input
+"""
+
+print "Calulcator is starting..."
+option = raw_input("Enter C for Circle or T for Triangle, or R for Rectangle: ")
+
+print option
+
+if option == 'C':
+  radius = float(raw_input("Enter radius: "))
+  area = 3.14159 * radius**2
+  print "Area: %f" % area
+###This is the area of the circle.
+elif option == 'T':
+  base = float(raw_input("Enter base: "))
+  height = float(raw_input("Enter height "))
+  area = .5 * base * height
+  print "Area: %f" % area
+###This is the area of the triangle.
+elif option == 'R':
+  width = float(raw_input("Enter width: "))
+  height = float(raw_input("Enter height: "))
+  area = width * height
+  print "Area: %f" % area
+###This is the area of a rectangle
+else:
+  print "Error! Invalid Shape."
+print "Exiting..."
+###Exit message
